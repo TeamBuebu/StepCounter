@@ -79,7 +79,10 @@ class MainViewController: UIViewController {
         actions = Array(actions.dropFirst())
         instructionLabel.text = actions[0]
         
-       // speechSynthesizer.speak(actions[0], onComplete:())
+        
+        speechSynthesizer.speak(actions[0]) {
+            
+        }
         
         actions = Array(actions.dropFirst())
     }
